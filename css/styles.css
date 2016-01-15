@@ -1,3 +1,72 @@
 .container {
 	text-align: center;
+	width: 550px;
+}
+
+#game-window {
+	background-color: red;
+	width: 100%;
+	height: 250px;
+}
+
+#game-render {
+	background-color: blue;
+	width: 100%;
+	height: 85%;
+}
+
+#player-bar {
+	background-color: black;
+	width: 100%;
+	height: 15%;
+	color: white;
+	padding-top: 10px;
+}
+
+#menu-selector {
+	background-color: black;
+	width: 100%;
+}
+
+#game-log {
+	overflow-y: scroll;
+	height: 150px;
+	text-align: left;
+}
+
+#sub-menus {
+	background-color: black;
+	width: 100%;
+	height: 150px;
+}
+
+#attack-menu {
+	display: none;
+}
+
+#defense-menu {
+	display: none;
+}
+
+#skill-menu {
+	display: none;
+}
+
+#talk-menu {
+	display: none;
+}
+
+#item-menu {
+	display: none;
+}
+
+#stat-menu {
+	background-color: white;
+	border-radius: 10px;
+	width: 90%;
+	height: 85%;
+	margin: auto;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
