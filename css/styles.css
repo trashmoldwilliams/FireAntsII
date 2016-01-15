@@ -33,6 +33,19 @@
 	margin-top: 10px;
 }
 
+#stat-limit-gauge {
+	font-weight: bold;
+	height: 110px;
+	padding-top: 30px;
+}
+
+#stat-limit-value {
+	font-size: 40px;
+}
+
+#confirm-character {
+}
+
 #game-window {
 	background-color: red;
 	width: 100%;

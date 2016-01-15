@@ -15,6 +15,7 @@ $(document).ready(function() {
   $("span#perception-value").text([perception]);
   $("span#wits-value").text([wits]);
   $("span#intelligence-value").text([intelligence]);
+  $("span#stat-limit-value").text([limit]);
 
 
   //Stat Builder Controls
@@ -23,6 +24,7 @@ $(document).ready(function() {
       strength -= 1;
       limit += 1;
       $("span#strength-value").text([strength]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -31,6 +33,7 @@ $(document).ready(function() {
       strength += 1;
       limit -= 1;
       $("span#strength-value").text([strength]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -39,6 +42,7 @@ $(document).ready(function() {
       endurance -= 1;
       limit += 1;
       $("span#endurance-value").text([endurance]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -47,6 +51,7 @@ $(document).ready(function() {
       endurance += 1;
       limit -= 1;
       $("span#endurance-value").text([endurance]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -55,6 +60,7 @@ $(document).ready(function() {
       finesse -= 1;
       limit += 1;
       $("span#finesse-value").text([finesse]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -63,6 +69,7 @@ $(document).ready(function() {
       finesse += 1;
       limit -= 1;
       $("span#finesse-value").text([finesse]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -71,6 +78,7 @@ $(document).ready(function() {
       perception -= 1;
       limit += 1;
       $("span#perception-value").text([perception]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -79,6 +87,7 @@ $(document).ready(function() {
       perception += 1;
       limit -= 1;
       $("span#perception-value").text([perception]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -87,6 +96,7 @@ $(document).ready(function() {
       wits -= 1;
       limit += 1;
       $("span#wits-value").text([wits]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -95,6 +105,7 @@ $(document).ready(function() {
       wits += 1;
       limit -= 1;
       $("span#wits-value").text([wits]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -103,6 +114,7 @@ $(document).ready(function() {
       intelligence -= 1;
       limit += 1;
       $("span#intelligence-value").text([intelligence]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 
@@ -111,6 +123,7 @@ $(document).ready(function() {
       intelligence += 1;
       limit -= 1;
       $("span#intelligence-value").text([intelligence]);
+      $("span#stat-limit-value").text([limit]);
     }
   });
 });
