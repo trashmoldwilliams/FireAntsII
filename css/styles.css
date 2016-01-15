@@ -8,14 +8,39 @@
 
 /*-Game Viewport-*/
 
+#set-stats-screen {
+
+}
+
+#form-stat-names {
+	margin-top: 10px;
+	text-align: left;
+	font-size: 18px;
+	list-style: none;
+	float: left;
+}
+
+#form-stat-controls {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 18px;
+	list-style: none;
+	float:left;
+}
+
+#name-entry {
+	text-align: center;
+	margin-top: 10px;
+}
+
 #game-window {
 	background-color: red;
 	width: 100%;
 	height: 250px;
 }
 
-#game-render {
-	background-color: blue;
+.game-render {
+	background-color: grey;
 	width: 100%;
 	height: 85%;
 }
