@@ -7,6 +7,23 @@ $(document).ready(function() {
   var perception = 1;
   var wits = 1;
   var intelligence = 1;
+
+  //Set Sub Stat Variables
+  var max_hp = 5;
+  var current_hp = 5;
+  var max_sp = 1;
+  var current_sp = 1;
+  var max_mp = 1;
+  var current_mp = 1;
+
+  var attack = 1;
+  var carry_weight = 2;
+  var sense = 1;
+  var stealth = 1;
+  var charisma = 1;
+  var knowledge = 1;
+
+  //Set Base Stat Limit
   var limit = 9;
 
   $("span#strength-value").text([strength]);
