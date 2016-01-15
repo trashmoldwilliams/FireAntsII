@@ -130,10 +130,15 @@ $(document).ready(function() {
   $("button#confirm-character").click(function() {
     if ($("input#name-entry").val() !== "" && limit === 0) {
       alert("Confirmed");
+      var player_name = $("input#name-entry").val().toUpperCase();
+      $("#player-name-hud").text([player_name]);
+
     }else if ($("input#name-entry").val() === "") {
       alert("Name your character, pal.");
+
     }else if (limit !== 0) {
       alert("Use all of your stat points, pal.");
     }
   });
+
 });
