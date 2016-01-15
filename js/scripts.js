@@ -126,4 +126,15 @@ $(document).ready(function() {
       $("span#stat-limit-value").text([limit]);
     }
   });
+
+  $("button#confirm-character").click(function() {
+    if ($("input#name-entry").val() !== "" && limit === 0) {
+      var player-name = 
+      alert("Confirmed");
+    }else if ($("input#name-entry").val() === "") {
+      alert("Name your character, pal.");
+    }else if (limit !== 0) {
+      alert("Use all of your stat points, pal.");
+    }
+  });
 });
