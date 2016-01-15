@@ -129,7 +129,6 @@ $(document).ready(function() {
 
   $("button#confirm-character").click(function() {
     if ($("input#name-entry").val() !== "" && limit === 0) {
-      var player-name = 
       alert("Confirmed");
     }else if ($("input#name-entry").val() === "") {
       alert("Name your character, pal.");
