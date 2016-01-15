@@ -1,7 +1,12 @@
+/*-Bootstrap-*/
+
 .container {
 	text-align: center;
 	width: 550px;
 }
+
+
+/*-Game Viewport-*/
 
 #game-window {
 	background-color: red;
@@ -23,15 +28,12 @@
 	padding-top: 10px;
 }
 
+
+/*-Menus-*/
+
 #menu-selector {
 	background-color: black;
 	width: 100%;
-}
-
-#game-log {
-	overflow-y: scroll;
-	height: 150px;
-	text-align: left;
 }
 
 #sub-menus {
@@ -69,4 +71,13 @@
 	position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+/*-Game Log-*/
+
+#game-log {
+	overflow-y: scroll;
+	height: 150px;
+	text-align: left;
 }
