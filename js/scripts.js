@@ -26,12 +26,12 @@ $(document).ready(function() {
   //Set Base Stat Limit
   var limit = 9;
 
-  $("span#strength-value").text([strength]);
-  $("span#endurance-value").text([endurance]);
-  $("span#finesse-value").text([finesse]);
-  $("span#perception-value").text([perception]);
-  $("span#wits-value").text([wits]);
-  $("span#intelligence-value").text([intelligence]);
+  $(".strength-value").text([strength]);
+  $(".endurance-value").text([endurance]);
+  $(".finesse-value").text([finesse]);
+  $(".perception-value").text([perception]);
+  $(".wits-value").text([wits]);
+  $(".intelligence-value").text([intelligence]);
   $("span#stat-limit-value").text([limit]);
 
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
       if (strength > 1) {
       strength -= 1;
       limit += 1;
-      $("span#strength-value").text([strength]);
+      $(".strength-value").text([strength]);
       $("span#stat-limit-value").text([limit]);
     }
   });
@@ -49,7 +49,7 @@ $(document).ready(function() {
       if (strength < 10 && limit > 0) {
       strength += 1;
       limit -= 1;
-      $("span#strength-value").text([strength]);
+      $(".strength-value").text([strength]);
       $("span#stat-limit-value").text([limit]);
     }
   });
@@ -61,7 +61,7 @@ $(document).ready(function() {
       max_hp -= 5;
       carry_weight -= 1;
       limit += 1;
-      $("span#endurance-value").text([endurance]);
+      $(".endurance-value").text([endurance]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-hp-hud").text([current_hp]);
       $("span#max-hp-hud").text([max_hp]);
@@ -75,7 +75,7 @@ $(document).ready(function() {
       max_hp += 5;
       carry_weight += 1;
       limit -= 1;
-      $("span#endurance-value").text([endurance]);
+      $(".endurance-value").text([endurance]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-hp-hud").text([current_hp]);
       $("span#max-hp-hud").text([max_hp]);
@@ -88,7 +88,7 @@ $(document).ready(function() {
       current_sp -= 1;
       max_sp -= 1;
       limit += 1;
-      $("span#finesse-value").text([finesse]);
+      $(".finesse-value").text([finesse]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-sp-hud").text([current_sp]);
       $("span#max-sp-hud").text([max_sp]);
@@ -101,7 +101,7 @@ $(document).ready(function() {
       current_sp += 1;
       max_sp += 1;
       limit -= 1;
-      $("span#finesse-value").text([finesse]);
+      $(".finesse-value").text([finesse]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-sp-hud").text([current_sp]);
       $("span#max-sp-hud").text([max_sp]);
@@ -114,7 +114,7 @@ $(document).ready(function() {
       current_mp -= 1;
       max_mp -= 1;
       limit += 1;
-      $("span#perception-value").text([perception]);
+      $(".perception-value").text([perception]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -127,7 +127,7 @@ $(document).ready(function() {
       current_mp += 1;
       max_mp += 1;
       limit -= 1;
-      $("span#perception-value").text([perception]);
+      $(".perception-value").text([perception]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -140,7 +140,7 @@ $(document).ready(function() {
       current_mp -= 1;
       max_mp -= 1;
       limit += 1;
-      $("span#wits-value").text([wits]);
+      $(".wits-value").text([wits]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -153,7 +153,7 @@ $(document).ready(function() {
       current_mp += 1;
       max_mp += 1;
       limit -= 1;
-      $("span#wits-value").text([wits]);
+      $(".wits-value").text([wits]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -166,7 +166,7 @@ $(document).ready(function() {
       current_mp -= 1;
       max_mp -= 1;
       limit += 1;
-      $("span#intelligence-value").text([intelligence]);
+      $(".intelligence-value").text([intelligence]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -179,7 +179,7 @@ $(document).ready(function() {
       current_mp += 1;
       max_mp += 1;
       limit -= 1;
-      $("span#intelligence-value").text([intelligence]);
+      $(".intelligence-value").text([intelligence]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
