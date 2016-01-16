@@ -57,93 +57,136 @@ $(document).ready(function() {
   $("span#endurance-left").click(function() {
       if (endurance > 1) {
       endurance -= 1;
+      current_hp -= 5;
+      max_hp -= 5;
+      carry_weight -= 1;
       limit += 1;
       $("span#endurance-value").text([endurance]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-hp-hud").text([current_hp]);
+      $("span#max-hp-hud").text([max_hp]);
     }
   });
 
   $("span#endurance-right").click(function() {
       if (endurance < 10 && limit > 0) {
       endurance += 1;
+      current_hp += 5;
+      max_hp += 5;
+      carry_weight += 1;
       limit -= 1;
       $("span#endurance-value").text([endurance]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-hp-hud").text([current_hp]);
+      $("span#max-hp-hud").text([max_hp]);
     }
   });
 
     $("span#finesse-left").click(function() {
       if (finesse > 1) {
       finesse -= 1;
+      current_sp -= 1;
+      max_sp -= 1;
       limit += 1;
       $("span#finesse-value").text([finesse]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-sp-hud").text([current_sp]);
+      $("span#max-sp-hud").text([max_sp]);
     }
   });
 
   $("span#finesse-right").click(function() {
       if (finesse < 10 && limit > 0) {
       finesse += 1;
+      current_sp += 1;
+      max_sp += 1;
       limit -= 1;
       $("span#finesse-value").text([finesse]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-sp-hud").text([current_sp]);
+      $("span#max-sp-hud").text([max_sp]);
     }
   });
 
     $("span#perception-left").click(function() {
       if (perception > 1) {
       perception -= 1;
+      current_mp -= 1;
+      max_mp -= 1;
       limit += 1;
       $("span#perception-value").text([perception]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-mp-hud").text([current_mp]);
+      $("span#max-mp-hud").text([max_mp]);
     }
   });
 
   $("span#perception-right").click(function() {
       if (perception < 10 && limit > 0) {
       perception += 1;
+      current_mp += 1;
+      max_mp += 1;
       limit -= 1;
       $("span#perception-value").text([perception]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-mp-hud").text([current_mp]);
+      $("span#max-mp-hud").text([max_mp]);
     }
   });
 
     $("span#wits-left").click(function() {
       if (wits > 1) {
       wits -= 1;
+      current_mp -= 1;
+      max_mp -= 1;
       limit += 1;
       $("span#wits-value").text([wits]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-mp-hud").text([current_mp]);
+      $("span#max-mp-hud").text([max_mp]);
     }
   });
 
   $("span#wits-right").click(function() {
       if (wits < 10 && limit > 0) {
       wits += 1;
+      current_mp += 1;
+      max_mp += 1;
       limit -= 1;
       $("span#wits-value").text([wits]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-mp-hud").text([current_mp]);
+      $("span#max-mp-hud").text([max_mp]);
     }
   });
 
     $("span#intelligence-left").click(function() {
       if (intelligence > 1) {
       intelligence -= 1;
+      current_mp -= 1;
+      max_mp -= 1;
       limit += 1;
       $("span#intelligence-value").text([intelligence]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-mp-hud").text([current_mp]);
+      $("span#max-mp-hud").text([max_mp]);
     }
   });
 
   $("span#intelligence-right").click(function() {
       if (intelligence < 10 && limit > 0) {
       intelligence += 1;
+      current_mp += 1;
+      max_mp += 1;
       limit -= 1;
       $("span#intelligence-value").text([intelligence]);
       $("span#stat-limit-value").text([limit]);
+      $("span#current-mp-hud").text([current_mp]);
+      $("span#max-mp-hud").text([max_mp]);
     }
   });
 
+  //Character Confirmation Button
   $("button#confirm-character").click(function() {
     if ($("input#name-entry").val() !== "" && limit === 0) {
       alert("Confirmed");
