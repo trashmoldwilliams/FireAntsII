@@ -32,6 +32,11 @@ $(document).ready(function() {
   $(".perception-value").text([perception]);
   $(".wits-value").text([wits]);
   $(".intelligence-value").text([intelligence]);
+  $(".attack-value").text([attack]);
+  $(".carry-weight-value").text([carry_weight]);
+  $(".stealth-value").text([stealth]);
+  $(".sense-value").text([sense]);
+  $(".charisma-value").text([charisma]);
   $("span#stat-limit-value").text([limit]);
 
 
@@ -39,8 +44,12 @@ $(document).ready(function() {
   $("span#strength-left").click(function() {
       if (strength > 1) {
       strength -= 1;
+      attack -= 1;
+      carry_weight -= 1;
       limit += 1;
       $(".strength-value").text([strength]);
+      $(".attack-value").text([attack]);
+      $(".carry-weight-value").text([carry_weight]);
       $("span#stat-limit-value").text([limit]);
     }
   });
@@ -48,8 +57,12 @@ $(document).ready(function() {
   $("span#strength-right").click(function() {
       if (strength < 10 && limit > 0) {
       strength += 1;
+      attack += 1;
+      carry_weight += 1;
       limit -= 1;
       $(".strength-value").text([strength]);
+      $(".attack-value").text([attack]);
+      $(".carry-weight-value").text([carry_weight]);
       $("span#stat-limit-value").text([limit]);
     }
   });
@@ -62,6 +75,7 @@ $(document).ready(function() {
       carry_weight -= 1;
       limit += 1;
       $(".endurance-value").text([endurance]);
+      $(".carry-weight-value").text([carry_weight]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-hp-hud").text([current_hp]);
       $("span#max-hp-hud").text([max_hp]);
@@ -76,6 +90,7 @@ $(document).ready(function() {
       carry_weight += 1;
       limit -= 1;
       $(".endurance-value").text([endurance]);
+      $(".carry-weight-value").text([carry_weight]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-hp-hud").text([current_hp]);
       $("span#max-hp-hud").text([max_hp]);
@@ -87,8 +102,10 @@ $(document).ready(function() {
       finesse -= 1;
       current_sp -= 1;
       max_sp -= 1;
+      stealth -= 1;
       limit += 1;
       $(".finesse-value").text([finesse]);
+      $(".stealth-value").text([stealth]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-sp-hud").text([current_sp]);
       $("span#max-sp-hud").text([max_sp]);
@@ -100,8 +117,10 @@ $(document).ready(function() {
       finesse += 1;
       current_sp += 1;
       max_sp += 1;
+      stealth += 1;
       limit -= 1;
       $(".finesse-value").text([finesse]);
+      $(".stealth-value").text([stealth]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-sp-hud").text([current_sp]);
       $("span#max-sp-hud").text([max_sp]);
@@ -113,8 +132,10 @@ $(document).ready(function() {
       perception -= 1;
       current_mp -= 1;
       max_mp -= 1;
+      sense -= 1;
       limit += 1;
       $(".perception-value").text([perception]);
+      $(".sense-value").text([sense]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -126,8 +147,10 @@ $(document).ready(function() {
       perception += 1;
       current_mp += 1;
       max_mp += 1;
+      sense += 1;
       limit -= 1;
       $(".perception-value").text([perception]);
+      $(".sense-value").text([sense]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -139,8 +162,10 @@ $(document).ready(function() {
       wits -= 1;
       current_mp -= 1;
       max_mp -= 1;
+      charisma -= 1;
       limit += 1;
       $(".wits-value").text([wits]);
+      $(".charisma-value").text([charisma]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
@@ -152,8 +177,10 @@ $(document).ready(function() {
       wits += 1;
       current_mp += 1;
       max_mp += 1;
+      charisma += 1;
       limit -= 1;
       $(".wits-value").text([wits]);
+      $(".charisma-value").text([charisma]);
       $("span#stat-limit-value").text([limit]);
       $("span#current-mp-hud").text([current_mp]);
       $("span#max-mp-hud").text([max_mp]);
