@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   //Set Base Stat Variables
+  var player_level = 15;
   var strength = 1;
   var endurance = 1;
   var finesse = 1;
@@ -218,7 +219,10 @@ $(document).ready(function() {
     if ($("input#name-entry").val() !== "" && limit === 0) {
       alert("Confirmed");
       var player_name = $("input#name-entry").val().toUpperCase();
-      $("#player-name-hud").text([player_name]);
+      $(".show_player_name").text([player_name]);
+      $(".show_player_level").text([player_level]);
+      $("#stats-menu-label").text("- LEVEL ");
+
 
     }else if ($("input#name-entry").val() === "") {
       alert("Name your character, pal.");
