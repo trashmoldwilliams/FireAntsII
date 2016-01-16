@@ -217,7 +217,6 @@ $(document).ready(function() {
   //Character Confirmation Button
   $("button#confirm-character").click(function() {
     if ($("input#name-entry").val() !== "" && limit === 0) {
-      alert("Confirmed");
       var player_name = $("input#name-entry").val().toUpperCase();
       $(".show_player_name").text([player_name]);
       $(".show_player_level").text([player_level]);
