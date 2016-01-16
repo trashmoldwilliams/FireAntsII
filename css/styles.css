@@ -112,7 +112,7 @@
   transform: translateY(-50%);
 }
 
-#stat-menu-left {
+.stat-menu {
 	margin-top: 2px;
 	text-align: left;
 	font-size: 12px;
@@ -123,6 +123,10 @@
 #stat-sub-menu {
 	border-top: 1px solid grey;
 	height: 30px;
+}
+
+.base-stat {
+	color: red;
 }
 
 
