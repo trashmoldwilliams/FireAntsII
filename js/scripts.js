@@ -241,20 +241,22 @@ $(document).ready(function() {
         var list_length_l = Math.floor(carry_weight / 2) + 1;
         var list_length_r = Math.floor(carry_weight / 2);
 
+
       }else {
         var list_length_l = carry_weight / 2;
         var list_length_r = carry_weight / 2;
 
       }
 
-      //Implement Initial Inventory Slots
-      for (var i = list_length_l; i> 0; i -= 1) {
-      $('#left-item-list').append("<li></li>");
+
+      //Implement Initial Inventory Slots With IDs
+      for (var i = 1; i <= list_length_l * 2; i += 2) {
+      $('#left-item-list').append("<li id= 'inventory-slot-" + [i] + "''></li>");
 
       }
 
-      for (var i = list_length_r; i > 0; i-= 1) {
-      $('#right-item-list').append("<li></li>");
+      for (var i = 2; i <= list_length_r * 2; i += 2) {
+      $('#right-item-list').append("<li id= 'inventory-slot-" + [i] + "''></li>");
 
       }
 
