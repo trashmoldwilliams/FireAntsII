@@ -162,7 +162,7 @@
 
 /*-Game Log-*/
 
-#game-log {
+#game-log-window {
 	overflow-y: scroll;
 	height: 150px;
 	text-align: left;

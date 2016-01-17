@@ -43,6 +43,7 @@ $(document).ready(function() {
 
   //Start Menu
   $("#start-game").click(function() {
+    $('#game-log').prepend("<li>name your character, and choose your base stats</li>")
     $("#title-screen").hide();
     $("#set-stats-screen").show();
     $("#hud-info").show();
