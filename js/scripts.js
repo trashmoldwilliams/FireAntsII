@@ -236,12 +236,39 @@ $(document).ready(function() {
       $("#item-menu").show();
 
 
+      //Calculate Initial Inventory Slots
+      if (carry_weight % 2 !== 0) {
+        var list_length_l = Math.floor(carry_weight / 2) + 1;
+        var list_length_r = Math.floor(carry_weight / 2);
+
+      }else {
+        var list_length_l = carry_weight / 2;
+        var list_length_r = carry_weight / 2;
+
+      }
+
+      //Implement Initial Inventory Slots
+      for (var i = list_length_l; i> 0; i -= 1) {
+      $('#left-item-list').append("<li></li>");
+
+      }
+
+      for (var i = list_length_r; i > 0; i-= 1) {
+      $('#right-item-list').append("<li></li>");
+
+      }
+
+
+    //Alert User to Enter Name
     }else if ($("input#name-entry").val() === "") {
       alert("Name your character, pal.");
 
+
+    //Alert User to Enter Stats
     }else if (limit !== 0) {
       alert("Use all of your stat points, pal.");
     }
+
   });
 
 });
