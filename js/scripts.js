@@ -45,6 +45,9 @@ $(document).ready(function() {
   $("#start-game").click(function() {
     $("#title-screen").hide();
     $("#set-stats-screen").show();
+    $("#hud-info").show();
+    $("#stat-sub-menu").show();
+    $(".stat-menu").show();
   });
 
 

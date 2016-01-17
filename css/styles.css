@@ -81,6 +81,14 @@
 
 /*-Menus-*/
 
+#hud-info {
+	display: none;
+}
+
+#hud-floor {
+	display: none;
+}
+
 #menu-selector {
 	background-color: black;
 	width: 100%;
@@ -128,6 +136,7 @@
 }
 
 .stat-menu {
+	display: none;
 	margin-top: 2px;
 	text-align: left;
 	font-size: 12px;
@@ -136,6 +145,7 @@
 }
 
 #stat-sub-menu {
+	display: none;
 	border-top: 1px solid grey;
 	height: 30px;
 }
