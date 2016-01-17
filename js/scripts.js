@@ -232,6 +232,8 @@ $(document).ready(function() {
       $(".show_player_name").text([player_name]);
       $(".show_player_level").text([player_level]);
       $("#stats-menu-label").text("- LEVEL ");
+      $("#stat-menu").hide();
+      $("#item-menu").show();
 
 
     }else if ($("input#name-entry").val() === "") {

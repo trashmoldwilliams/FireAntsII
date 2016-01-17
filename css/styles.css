@@ -107,7 +107,6 @@
 
 .menu {
 	background-color: white;
-	border-radius: 10px;
 	width: 90%;
 	height: 85%;
 	margin: auto;
@@ -134,6 +133,9 @@
 
 #item-menu {
 	display: none;
+	max-width: 100%;
+  overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 #stat-menu {
