@@ -6,10 +6,42 @@
 }
 
 
-/*-Game Viewport-*/
+/*Game Viewport*/
+
+#game-window {
+	background-color: red;
+	width: 100%;
+	height: 250px;
+}
+
+.game-render {
+	background-color: grey;
+	width: 100%;
+	height: 85%;
+}
+
+#player-bar {
+	font-size: 12px;
+	background-color: black;
+	width: 100%;
+	height: 15%;
+	color: white;
+	padding-top: 10px;
+}
+
+
+/*-Start Menu-*/
+
+#start-game {
+	font-size: 20px;
+	margin-top: 90px;
+}
+
+
+/*-Set Stats Form-*/
 
 #set-stats-screen {
-
+	display: none;
 }
 
 #form-stat-names {
@@ -44,27 +76,6 @@
 }
 
 #confirm-character {
-}
-
-#game-window {
-	background-color: red;
-	width: 100%;
-	height: 250px;
-}
-
-.game-render {
-	background-color: grey;
-	width: 100%;
-	height: 85%;
-}
-
-#player-bar {
-	font-size: 12px;
-	background-color: black;
-	width: 100%;
-	height: 15%;
-	color: white;
-	padding-top: 10px;
 }
 
 

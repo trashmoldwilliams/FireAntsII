@@ -41,6 +41,13 @@ $(document).ready(function() {
   $("span#stat-limit-value").text([limit]);
 
 
+  //Start Menu
+  $("#start-game").click(function() {
+    $("#title-screen").hide();
+    $("#set-stats-screen").show();
+  });
+
+
   //Stat Builder Controls
   $("span#strength-left").click(function() {
       if (strength > 1) {
