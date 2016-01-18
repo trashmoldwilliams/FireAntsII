@@ -229,11 +229,14 @@ $(document).ready(function() {
   $("button#confirm-character").click(function() {
     if ($("input#name-entry").val() !== "" && limit === 0) {
       var player_name = $("input#name-entry").val().toUpperCase();
+      $('#game-log').prepend("<li>as consolation for playing the hit game <em>Fire Ants II</em>, you the loyal player will recieve <strong>ONE</strong> quality gift from the CEO of <em>Fire Ants II</em> Inc.</li>")
       $(".show_player_name").text([player_name]);
       $(".show_player_level").text([player_level]);
       $("#stats-menu-label").text("- LEVEL ");
       $("#stat-menu").hide();
       $("#item-menu").show();
+      $("#set-stats-screen").hide();
+      $("#starting-gift-screen").show();
 
 
       //Calculate Initial Inventory Slots
